@@ -1,0 +1,75 @@
+#new__elements {
+    background-color: rgb(0, 157, 255);
+}
+.new_el__container {
+    max-width: 1870px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.modda_title {
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.modda_wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.modda_wrapper .card_modda {
+    position: relative;
+    max-width: 350px;
+    height: 320px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+
+
+}
+.modda_wrapper .card_modda:hover {
+    height: 550px;
+}
+
+.modda_wrapper .card_modda .imgBx {
+    width: 220px;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    /* top: -60px; */
+    box-shadow: 0 5px 202px rgba(0,0,0,0.2);
+}
+.modda_wrapper .card_modda .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.modda_wrapper .card_modda .content {
+    position: relative;
+    margin-top: -240px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.modda_wrapper .card_modda:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 20px;
+    transition-delay:0.3s ;
+    overflow: auto;
+}
+
+.modda_wrapper .card_modda:hover .imgBx {
+    margin-top: -60px;
+}

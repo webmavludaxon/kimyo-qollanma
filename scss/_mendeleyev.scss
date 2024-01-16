@@ -1,0 +1,56 @@
+.mend {
+    display: flex;
+    margin-bottom: 70px;
+
+    .img_mend {
+        width: 600px;
+        height: 600px;
+        margin-top: 50px;
+        transition: all ease 0.3s;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        &:hover{
+            clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+
+        }
+        
+
+        }
+
+        .mend_right {
+            margin-left: 40px;
+
+        }
+
+        .mendeleyev_title {
+            margin-bottom: 30px;
+            color: #000;
+            font-size: 58px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .mend_text {
+            margin-top: 50px;
+            color: #3D3E48;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .mend_btn {
+            background-color: #3586ff;
+            padding: 15px 40px 15px 40px;
+            border-radius: 60px;
+            border: 2px solid #3586ff;
+            transition: all 0.3s ease;
+            color: #fff;
+            &:hover {
+                background-color: #fff;
+                width: 130px;
+                color: #3586ff;
+            }
+        }
+    }

@@ -1,0 +1,110 @@
+#hero {
+    height: 600px;
+    background-color: #3586ff;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 130px;
+
+    .hero__container {
+        margin: 0 auto;
+        width: 90vw;
+    }
+
+    .hero__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        h2,
+        h3 {
+            transition: all 0.3s linear;
+            border-bottom: solid transparent 2px;
+        }
+
+        h2:hover {
+            margin-left: 20px;
+            border-bottom: solid blue 2px;
+        }
+
+        h3:hover {
+            margin-left: 20px;
+            border-bottom: solid rgb(48, 25, 224) 2px;
+        }
+
+        .hero__img {
+            margin-top: 30px;
+        }
+    }
+
+    .about__btn {
+        background-color: #3586ff;
+        display: block;
+        padding: 10px 28px 11px 28p;
+        width: 120px;
+        height: 45px;
+        white-space: nowrap;
+        border-radius: 60px;
+        border: 2px solid #fff;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+
+        h6 {
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        &:hover {
+            background-color: #3586ff;
+            border: 2px solid black;
+            border: 2px solid #3586ff;
+            width: 130px;
+
+            h6 {
+                color: black;
+            }
+        }
+    }
+}
+
+#a:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #1acc8d;
+    border-top-color: #d2f9eb;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-a {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.animated{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
